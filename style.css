@@ -78,19 +78,54 @@ a:active {
   color: deeppink;
 }
 
-/* layout */
+/* ===== Layouts ===== */
 
+/* Flexbox */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
-/* grid */
-
+/* Grid */
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+/* ===== Responsiveness ===== */
+
+/* Media Query */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  main {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+
+  img,
+  video,
+  audio {
+    max-width: 100%;
+    width: 100%;
+  }
 }
