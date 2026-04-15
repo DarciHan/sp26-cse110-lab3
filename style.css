@@ -166,3 +166,76 @@ h1 {
 p {
   font-weight: 400;
 }
+
+/* ===== CSS Selectors ===== */
+
+/* Class selector */
+.highlight {
+  color: hotpink;
+}
+
+/* ID selector */
+#agenda {
+  border: 2px dashed deeppink;
+}
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Element selector */
+h3 {
+  font-style: italic;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  border: 2px solid pink;
+}
+
+/* Selector list */
+h2, h3 {
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+/* ===== Combinators ===== */
+
+/* Descendant */
+section p {
+  line-height: 1.5;
+}
+
+/* Child */
+nav > ul {
+  list-style-type: none;
+}
+
+/* Adjacent sibling */
+h2 + p {
+  color: purple;
+}
+
+/* General sibling */
+h2 ~ p {
+  font-size: 0.9rem;
+}
+
+/* Combining selectors */
+section.highlight {
+  background-color: #ffe0f0;
+}
+
+/* ===== New Selectors ===== */
+
+/* :has() */
+section:has(img) {
+  border: 3px solid pink;
+}
+
+/* Nested selector */
+section {
+  & h3 {
+    color: #cc0066;
+  }
+}
