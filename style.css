@@ -1,3 +1,9 @@
+/* ====Colour ====*/
+
+:root {
+  --main-pink: #ff4fa3;
+}
+
 /* ===== Background ===== */
 body {
   background-color: #ffe4ef;
@@ -10,13 +16,17 @@ body {
 }
 
 h1 {
-  color: #ff4fa3;
+  color: var(--main-pink, hotpink);
   text-align: center;
   text-decoration: underline;
 }
 
 p {
   color: rgb(80, 0, 60);
+}
+
+nav a {
+  color: hsl(330, 100%, 60%);
 }
 
 /* ===== Box Model ===== */
@@ -38,6 +48,10 @@ section {
   border-radius: 10px;
 }
 
+img {
+  border: 3px solid hotpink;
+}
+
 /* ===== Display ===== */
 section {
   display: block;
@@ -52,6 +66,14 @@ img {
   width: 200px;
   height: auto;
   max-width: 100%;
+}
+
+section {
+  min-width: 300px;
+}
+
+video {
+  width: 3in;
 }
 
 /* ===== Unit ===== */
@@ -83,10 +105,17 @@ header {
   height: 100px;
 }
 
+audio {
+  margin-top: 1cm;
+}
+
 /* ===== Position ===== */
 header {
   position: sticky;
   top: 0;
+}
+nav {
+  position: relative;
 }
 
 /* ===== Pseudo-class ===== */
@@ -165,6 +194,9 @@ h1 {
 
 p {
   font-weight: 400;
+}
+button {
+  background-color: color-mix(in srgb, hotpink 70%, white 30%);
 }
 
 /* ===== CSS Selectors ===== */
