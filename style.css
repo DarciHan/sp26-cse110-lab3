@@ -55,12 +55,32 @@ img {
 }
 
 /* ===== Unit ===== */
+
+/* Relative units */
 h1 {
-  font-size: 2rem; /* relative */
+  font-size: 2rem;
 }
 
+h2 {
+  font-size: 3vw; 
+}
+
+section {
+  width: 80%;
+  margin: 2em auto; 
+}
+
+/* Absolute units */
 p {
-  font-size: 16px; /* absolute */
+  font-size: 16px;
+}
+
+img {
+  width: 200px;
+}
+
+header {
+  height: 100px;
 }
 
 /* ===== Position ===== */
@@ -128,4 +148,21 @@ section {
     max-width: 100%;
     width: 100%;
   }
+}
+
+/* ===== Fonts ===== */
+body {
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+p {
+  font-weight: 400;
 }
