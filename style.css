@@ -1,0 +1,29 @@
+/*basic  styling*/
+
+body {
+  background-color: #ffe6f0; /* soft pink  */
+  color: #4a0033; /* deep pink  */
+  font-family: "Arial", sans-serif;
+}
+
+/* headings */
+h1 {
+  color: #ff66b2; /* bright pink */
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2, h3 {
+  color: #ff99cc; /* lighter pink */
+}
+
+/* paragraphs */
+p {
+  color: rgb(80, 0, 60); /* dark rosy tone */
+}
+
+/* box */
+section {
+  background-color: #fff0f5; /* very light pink */
+  border: 2px solid #ffb6c1;
+}
