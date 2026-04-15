@@ -27,3 +27,20 @@ section {
   background-color: #fff0f5; /* very light pink */
   border: 2px solid #ffb6c1;
 }
+
+/* layout */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* grid */
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
